@@ -4,4 +4,6 @@
     <string name="Hello_My_Master" />
     <string name="displaytext">Hello Master</string>
     <string name="hello_master">Hello Master...</string>
+    <string name="settingupfaraday">Setting up the Faraday....</string>
+    <string name="submit">Submit</string>
 </resources>
