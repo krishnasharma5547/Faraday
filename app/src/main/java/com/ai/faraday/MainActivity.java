@@ -33,11 +33,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        settingup=new SettingUp();
-        display = findViewById(R.id.textView1);
-        display.setText(R.string.settingupfaraday);
-        setname=findViewById(R.id.getName);
+        display=findViewById(R.id.textView1);
         submitbutton=findViewById(R.id.submitButton);
+        settingup=new SettingUp();
+
         submitbutton.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 settingup.setName(setname.getText().toString());
             }
         });
-        display.setText(String.format("Hello%s", settingup.getName().toString()));
+//        display.setText(String.format("Hello%s", settingup.getName().toString()));
 
 
 
