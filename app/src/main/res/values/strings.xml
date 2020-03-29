@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Faraday</string>
+    <string name="hello_my_master_i_am_faraday_tell_me_what_do_you_want_me_to_do_for_you">Hello my Master I am Faraday Tell me what do you want me to do for you</string>
+    <string name="Hello_My_Master" />
+    <string name="displaytext">Hello Master</string>
+    <string name="hello_master">Hello Master...</string>
 </resources>

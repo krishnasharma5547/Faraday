@@ -23,4 +23,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="228dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="367dp"
+        android:text="@string/hello_master"
+        android:textColor="#EAEAEA"
+        android:textColorHighlight="#F6F1F1"
+        android:textColorHint="#AC5252"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
