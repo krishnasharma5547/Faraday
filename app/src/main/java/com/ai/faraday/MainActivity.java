@@ -1,6 +1,8 @@
 package com.ai.faraday;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
             {
                 user.setName(text.getText().toString());
                 view.setText(user.getName());
+                Intent i = new Intent(getApplicationContext(),Activity_2.class);
+                startActivity(i);
+                setContentView(R.layout.activity_2);
             }
 
         });
