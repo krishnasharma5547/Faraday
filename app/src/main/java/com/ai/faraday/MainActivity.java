@@ -26,16 +26,22 @@ public class MainActivity extends AppCompatActivity {
         submitButton=findViewById(R.id.submitButton);
         user=new SettingUp();
 
+
         submitButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
+
+                if(!text.getText().toString().equals(""))
+                {
+                    Intent i = new Intent(getApplicationContext(), Activity_2.class);
+                    startActivity(i);
+                    setContentView(R.layout.activity_2);
+                }
+                view.setText(R.string.viewName);
                 user.setName(text.getText().toString());
-                view.setText(user.getName());
-                Intent i = new Intent(getApplicationContext(),Activity_2.class);
-                startActivity(i);
-                setContentView(R.layout.activity_2);
+
             }
 
         });
