@@ -1,41 +1,18 @@
 package com.ai.faraday;
 
-import android.widget.TextView;
-
-public class SettingUp
+class SettingUp
 {
-    private MainActivity main;
-    private String Name;
-    TextView display;
+    private String name;
 
-
-    public MainActivity getMain() {
-
-        return main;
+    SettingUp() {
+        name=null;
     }
 
-    public void setMain(MainActivity main) {
-        this.main = main;
+    String getName() {
+        return name;
     }
 
-
-    public String getName() {
-        return Name;
+    void setName(String name) {
+        this.name = name;
     }
-
-
-    public void setName(String name)
-    {
-        Name = name;
-    }
-
-    public TextView getDisplay() {
-        return display;
-    }
-
-    public void setDisplay(TextView display) {
-        this.display = display;
-    }
-
-
 }

@@ -9,43 +9,38 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView display;
-    EditText setname;
-    SettingUp settingup;
-    Button submitbutton;
-
-
-    public TextView getDisplay() {
-        return display;
-    }
-    public void setDisplay(TextView display) {
-        this.display = display;
-    }
-
-    public SettingUp getSettingup() {
-        return settingup;
-    }
-    public void setSettingup(SettingUp settingup) {
-        this.settingup = settingup;
-    }
+    EditText text;
+    TextView view;
+    Button submitButton;
+    SettingUp user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        display=findViewById(R.id.textView1);
-        submitbutton=findViewById(R.id.submitButton);
-        settingup=new SettingUp();
 
-        submitbutton.setOnClickListener(new View.OnClickListener()
+        setContentView(R.layout.activity_main);
+        view=findViewById(R.id.setting_up_faraday);
+        text=findViewById(R.id.getName);
+        submitButton=findViewById(R.id.submitButton);
+        user=new SettingUp();
+
+        submitButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                settingup.setName(setname.getText().toString());
+                user.setName(text.getText().toString());
+                view.setText(user.getName());
             }
+
         });
-//        display.setText(String.format("Hello%s", settingup.getName().toString()));
+
+
+
+
+
+
+
 
 
 
